@@ -2,10 +2,8 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        System.out.println("*** CITIZEN ***");
         System.out.println("Калькулятор запущен. Введите число");
         double operand1, operand2;
-        int i = 1;
         do {
             Scanner scanner = new Scanner(System.in);
             if (scanner.hasNextDouble()) {
@@ -24,9 +22,8 @@ public class Calculator {
 
             System.out.println(action(operand1, operation, operand2));
         }
-        while (i == 1);
+        while (true);
     }
-
     private static double action(double a, char b, double c) {
         double result = 0;
         switch (b) {
